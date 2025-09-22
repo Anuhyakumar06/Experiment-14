@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #0f172a; color: #f8fafc; }
+    header { text-align: center; padding: 50px 20px; }
+    h1 { font-size: 3rem; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background: #1e293b;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.4s, box-shadow 0.4s;
+      cursor: pointer;
+    }
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+    .card h3 { padding: 15px; margin: 0; }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio 💼</h1>
+    <p>Some of my featured projects</p>
+  </header>
+  <section class="projects">
+    <div class="card">
+      <img src="https://picsum.photos/400/200" alt="Project 1">
+      <h3>Project One</h3>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/401/200" alt="Project 2">
+      <h3>Project Two</h3>
+    </div>
+    <div class="card">
+      <img src="https://picsum.photos/402/200" alt="Project 3">
+      <h3>Project Three</h3>
+    </div>
+  </section>
+</body>
+</html>
